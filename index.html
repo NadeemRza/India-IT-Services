@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>India IT Services</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+
+    <!-- Header Section -->
+    <div class="header">
+      <img src="./assets/logo1.png" alt="logo" />
+      <div class="header-tags">
+        <a href="index.html"><button class="link">Home</button></a>
+
+        <!-- Comapny Info Dropdown -->
+        <div class="dropdown">
+          <button class="link">Company Information</button>
+          <div class="dropdown-menu information-grid">
+            <div>
+              <div class="dropdown-heading">Services</div>
+              <div class="dropdown-links">
+                <a href="#" class="links">Application Development</a>
+                <a href="#" class="links">Website Development</a>
+                <a href="#" class="links">Manpower Supply</a>
+              </div>
+            </div>
+            <div>
+              <div class="dropdown-heading">Products</div>
+              <div class="dropdown-links">
+                <a href="#" class="links">FirstPro</a>
+              </div>
+            </div>
+            <div>
+              <div class="dropdown-heading">Trainings</div>
+              <div class="dropdown-links">
+                <a href="#" class="links">Microsoft .Net</a>
+                <a href="#" class="links">Tally</a>
+                <a href="#" class="links">Microsoft Office</a>
+              </div>
+            </div>
+            <div>
+              <div class="dropdown-heading">Technologies</div>
+              <div class="dropdown-links">
+                <a href="#" class="links">Microsoft</a>
+                <a href="#" class="links">Cloud Computing</a>
+                <a href="#" class="links">SaaS</a>
+              </div>
+            </div>
+            <div>
+              <div class="dropdown-heading">About Us</div>
+              <div class="dropdown-links">
+                <a href="#" class="links">Profile</a>
+                <a href="#" class="links">Leadership</a>
+                <a href="#" class="links">Career</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Client Menu Dropdown-->
+        <div class="dropdown">
+          <button class="link">Our Clients</button>
+          <div class="dropdown-menu information-grid">
+            <div>
+              <div class="dropdown-heading">Clients</div>
+              <div class="dropdown-links">
+                <a href="https://indiaitservices.co.in/clients.html" target="_blank" class="links">Clients & Testimonials</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+        <a href="https://indiaitservices.co.in/contact.html" target="_blank">
+          <button class="link">Contact Us</button>
+        </a>
+
+        <!-- Login Button -->
+        <div class="dropdown login-btn-sec">
+          <button class="link login-btn">Login</button>
+          <div class="dropdown-menu">
+            <form class="login-form">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" />
+              <button class="submit" type="submit">Login</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Slider Section -->
+    <div class="slider">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="./assets/img1.png" alt="img1"></div>
+          <div class="swiper-slide"><img src="./assets/img2.png" alt="img2"></div>
+          <div class="swiper-slide"><img src="./assets/img3.png" alt="img3"></div>
+          <div class="swiper-slide"><img src="./assets/img4.png" alt="img4"></div>
+        </div>
+
+        <!--pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!--navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+    <!-- Content Head Section -->
+      <div class="content-head">
+        <h1>Welcome To India IT Services</h1>
+        <p>Founded in 2009, India IT Services (IITS)is a home grown company. It was started as a web hosting company and later entered into custom application development (desktop and web), mobile application development, product development and very recently into IT man power supply.</p>
+        <h3>IITS: Driven by a solutions mindset</h3>
+        <p>We're driven by a passion to help our clients build stronger, more agile and more innovative businesses.</p>
+        <p>IITS enables enterprises to make their current operations as efficient and cost-effective as possible, and to invest in innovation to unleash new potential across their organizations.</p>
+        <p>What makes IITS unique is our ability to help clients meet both challenges. We help them enhance productivity by ensuring that vital business functions work faster, cheaper and better. And, our ability to conceptualize, architect and implement new and expanded capabilities allows clients to transform legacy models to take their business to the next level.</p>
+    </div>
+
+
+    <!-- Footer Section -->
+    <footer>
+      <span class="footer-text">
+        &#169;2014 Indian IT Services
+      </span>
+    </footer>
+
+
+
+
+    <!-- Slider Script Section -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+      autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+          },
+          
+      loop: true,
+      
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    </script>
+
+  </body>
+</html>
